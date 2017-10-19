@@ -1,0 +1,27 @@
+# Usage {{{
+# 
+# General:
+# C-z			Prefix
+#
+# Special:
+# C     Up		Select prrevious window
+# C		Down	Select Next Window
+#
+# }}}
+
+# Navigation {{{
+
+# remap prefix from 'c-b' to 'C-a'
+set -g prefix C-z
+unbind-key C-a
+bind-key C-z send prefix
+
+# window navigation
+unbind-key -n M-Left
+unbind-key -n M-Right
+bind-key -n M-Up   select-window -t:-1
+bind-key -n M-Down select-window -t:+1
+
+# }}}
+
+# vim:foldmethod=marker:foldlevel=0
