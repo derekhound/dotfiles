@@ -1,5 +1,5 @@
 #!/bin/sh
-DOTFILESHOME=~/.dotfiles
+DOTFILES_HOME=~/.dotfiles
 
 warn() {
     echo "$1" >&2
