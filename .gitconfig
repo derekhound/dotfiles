@@ -1,0 +1,25 @@
+[user]
+    name = Derek Chen
+    email = derek@exmaple.com
+[core]
+    editor = vim
+[color]
+    ui = auto
+    diff = auto
+    status = auto
+    branch = auto
+    log = auto
+[alias]
+    st = status
+    ci = commit
+    co = checkout
+    cp = cherry-pick
+    up = rebase
+    br = branch
+    df = diff
+    la = log --graph --abbrev-commit --decorate --format=format:'%C(bold red)%h%Creset -%C(bold yellow)%d%Creset %C(bold green)(%cr)%Creset %s %C(bold blue)<%an>%Creset' --all
+    lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold red)%h%Creset -%C(bold yellow)%d%Creset %C(bold cyan)%ai%C(reset) %C(bold green)(%cr)%Creset%n''          %s %C(bold blue)<%an>%Creset' --all
+[branch]
+    autosetuprebase = always
+[push]
+	default = simple
